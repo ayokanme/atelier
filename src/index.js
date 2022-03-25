@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable import/extensions */
 import express from 'express';
 import productList from './controllers/productList.js';
