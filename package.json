@@ -3,11 +3,13 @@
   "description": "API Service to provide product data to the Atelier eCommerce client",
   "version": "1.0.0",
   "main": "src/index.js",
+  "type": "module",
   "jest": {
     "verbose": true
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -30,5 +32,13 @@
     "jest": "^27.5.1",
     "mongoose": "6.2",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.3.0"
   }
 }
