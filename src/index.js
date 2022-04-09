@@ -1,10 +1,9 @@
 /* eslint-disable no-console */
-/* eslint-disable import/extensions */
 import express from 'express';
-import productList from './controllers/productList.js';
-import productInfo from './controllers/productInfo.js';
-import productStyles from './controllers/productStyles.js';
-import relatedProducts from './controllers/relatedProducts.js';
+import productList from './controllers/productList';
+import productInfo from './controllers/productInfo';
+import productStyles from './controllers/productStyles';
+import relatedProducts from './controllers/relatedProducts';
 
 const app = express();
 const port = 3500;
