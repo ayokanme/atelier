@@ -1,13 +1,15 @@
 /* eslint-disable no-console */
+/* eslint-disable import/extensions */
 import express from 'express';
-import productList from './controllers/productList';
-import productInfo from './controllers/productInfo';
-import productStyles from './controllers/productStyles';
-import relatedProducts from './controllers/relatedProducts';
+import productList from './controllers/productList.js';
+import productInfo from './controllers/productInfo.js';
+import productStyles from './controllers/productStyles.js';
+import relatedProducts from './controllers/relatedProducts.js';
 
 const app = express();
 const port = 3500;
 
+app.use(express.urlencoded());
 app.use(express.json());
 
 // ROUTES
