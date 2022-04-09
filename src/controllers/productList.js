@@ -13,23 +13,32 @@ const productList = async (req, res) => {
     const startId = (page * count) - (count - 1);
     const endId = (page * count);
 
-    const products = await Product.aggregate([
-      {
-        $match: {
-          id: { $gte: startId, $lte: endId },
+    try {
+      const products = await Product.aggregate([
+        {
+          $match: {
+            id: { $gte: startId, $lte: endId },
+          },
         },
-      },
-      {
-        $project: {
-          _id: false,
-          styles: false,
-          features: false,
-          related: false,
+        {
+          $project: {
+            _id: false,
+            styles: false,
+            features: false,
+            related: false,
+          },
         },
-      },
-    ]);
+      ]);
 
-    res.status(200).json(products);
+      if (products.length > 0) {
+        res.status(200).json(products);
+      } else {
+        res.status(400).send('no products available');
+      }
+    } catch (error) {
+      console.log('server error: ', error);
+      res.status(500).send('server error');
+    }
   }
 };
 
