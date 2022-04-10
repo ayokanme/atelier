@@ -47,7 +47,7 @@ const productSchema = new mongoose.Schema({
   related: [Number],
 });
 
-productSchema.index({ id: 1, 'styles.style_id': 1 });
+productSchema.index({ 'styles.style_id': 1 });
 
 const Product = mongoose.model('Product', productSchema);
 

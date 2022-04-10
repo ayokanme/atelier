@@ -2,8 +2,8 @@
 import Product from '../db.js';
 
 const productList = async (req, res) => {
-  const { count } = req.query || 5;
-  const { page } = req.query || 1;
+  const count = req.query.count || 5;
+  const page = req.query.page || 1;
 
   const productCount = await Product.estimatedDocumentCount();
 
@@ -30,7 +30,7 @@ const productList = async (req, res) => {
         },
       ]);
 
-      if (products.length > 0) {
+      if (products.length) {
         res.status(200).json(products);
       } else {
         res.status(400).send('no products available');
