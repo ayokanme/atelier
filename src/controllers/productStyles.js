@@ -9,7 +9,7 @@ const productStyles = async (req, res) => {
   }
 
   try {
-    const reponse = await Product.aggregate([
+    const response = await Product.aggregate([
       {
         $match: {
           id: productId,
@@ -23,8 +23,8 @@ const productStyles = async (req, res) => {
       },
     ]);
 
-    if (reponse.length) {
-      res.status(200).json(reponse[0]);
+    if (response.length) {
+      res.status(200).json(response[0]);
     } else {
       res.status(400).send('product with that ID does not exist');
     }
