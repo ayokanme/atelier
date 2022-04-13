@@ -8,8 +8,7 @@
     "verbose": true
   },
   "scripts": {
-    "test": "jest",
-    "coverage": "jest --coverage",
+    "test": "jest --coverage",
     "start": "nodemon src/index.js"
   },
   "repository": {
@@ -32,7 +31,8 @@
     "express": "4.17",
     "jest": "^27.5.1",
     "mongoose": "6.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
   },
   "devDependencies": {
     "eslint": "^8.11.0",
