@@ -6,32 +6,32 @@ const productInfo = async (req, res) => {
 
   if (Number.isNaN(productId)) {
     res.status(404).send('wrong parameter type');
-  }
-
-  try {
-    const productData = await Product.aggregate([
-      {
-        $match: {
-          id: productId,
+  } else {
+    try {
+      const productData = await Product.aggregate([
+        {
+          $match: {
+            id: productId,
+          },
         },
-      },
-      {
-        $project: {
-          _id: false,
-          styles: false,
-          related: false,
+        {
+          $project: {
+            _id: false,
+            styles: false,
+            related: false,
+          },
         },
-      },
-    ]);
+      ]);
 
-    if (productData.length) {
-      res.status(200).json(productData[0]);
-    } else {
-      res.status(400).send('product with that ID does not exist');
+      if (productData.length) {
+        res.status(200).json(productData[0]);
+      } else {
+        res.status(400).send('product with that ID does not exist');
+      }
+    } catch (error) {
+      console.log('server error: ', error);
+      res.status(500).send('server error');
     }
-  } catch (error) {
-    console.log('server error: ', error);
-    res.status(500).send('server error');
   }
 };
 
