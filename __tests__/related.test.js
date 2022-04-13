@@ -18,7 +18,7 @@ describe('RelatedProducts (/products/:product_id/related) endpoint test', () => 
   });
 
   test('it should return an error when the parameter type is not a number', async () => {
-    const res = await request(app).get('/products/product_id/related');
+    const res = await request(app).get('/products/productId/related');
 
     expect(res.statusCode).toEqual(404);
     expect(res.text).toEqual('wrong parameter type');
