@@ -16,4 +16,18 @@ describe('RelatedProducts (/products/:product_id/related) endpoint test', () => 
     expect(res.statusCode).toEqual(200);
     expect(res.body).toEqual(product.related);
   });
+
+  test('it should return an error when the parameter type is not a number', async () => {
+    const res = await request(app).get('/products/product_id/related');
+
+    expect(res.statusCode).toEqual(404);
+    expect(res.text).toEqual('wrong parameter type');
+  });
+
+  test('it should return an error when the specified product ID does not exist', async () => {
+    const res = await request(app).get('/products/2002000/related');
+
+    expect(res.statusCode).toEqual(400);
+    expect(res.text).toEqual('product with that ID does not exist');
+  });
 });
