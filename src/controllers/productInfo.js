@@ -25,7 +25,7 @@ const productInfo = async (req, res) => {
     ]);
 
     if (productData.length > 0) {
-      res.status(200).json(productData);
+      res.status(200).json(productData[0]);
     } else {
       res.status(400).send('product with that ID does not exist');
     }
