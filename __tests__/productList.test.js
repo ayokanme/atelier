@@ -43,4 +43,18 @@ describe('ProductList (/products) endpoint test', () => {
     expect(res.body.length).toEqual(13);
     expect(containsCorrectProduct).toEqual(true);
   });
+
+  test('it should return an error when the page limit is exceeded', async () => {
+    const res = await request(app).get('/products?page=10002&count=100');
+
+    expect(res.statusCode).toEqual(404);
+    expect(res.text).toEqual('page limit exceeded');
+  });
+
+  test('it should return an error when the parameter type is not a number', async () => {
+    const res = await request(app).get('/products?page=page_num&count=item_count');
+
+    expect(res.statusCode).toEqual(404);
+    expect(res.text).toEqual('wrong parameter type');
+  });
 });
