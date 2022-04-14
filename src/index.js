@@ -9,6 +9,7 @@ import relatedProducts from './controllers/relatedProducts.js';
 const app = express();
 const port = 3500;
 
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ROUTES
