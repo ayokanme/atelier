@@ -3,7 +3,7 @@
 /* eslint-disable no-undef */
 import request from 'supertest';
 import express from 'express';
-import productStyles from '../src/controllers/productStyles.js';
+import productStyles from '../../src/controllers/productStyles.js';
 import product from './product.json';
 
 const app = express();
