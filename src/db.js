@@ -36,7 +36,7 @@ const stylesSchema = new mongoose.Schema({
 });
 
 const productSchema = new mongoose.Schema({
-  id: { type: Number/* , unique: true */ },
+  id: { type: Number, unique: true },
   name: String,
   slogan: String,
   description: String,
@@ -47,7 +47,7 @@ const productSchema = new mongoose.Schema({
   related: [Number],
 });
 
-// productSchema.index({ 'styles.style_id': 1 });
+productSchema.index({ 'styles.style_id': 1 });
 
 const Product = mongoose.model('Product', productSchema);
 
