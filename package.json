@@ -27,9 +27,11 @@
   },
   "homepage": "https://github.com/rpp33-sdc-tulip/products-api#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "4.17",
     "jest": "^27.5.1",
+    "k6": "^0.0.0",
     "mongoose": "6.2",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"
