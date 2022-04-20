@@ -1,0 +1,42 @@
+{
+  "id": 64620,
+  "name": "Bernhard Backpack",
+  "slogan": "Cumque perferendis voluptatem.",
+  "description": "Accusantium animi temporibus beatae ut aut sequi. Similique unde assumenda est ut aut accusantium. Qui quibusdam vero. Possimus mollitia quia dignissimos sit provident et inventore enim.",
+  "category": "Backpack",
+  "default_price": "462",
+  "styles": [{
+      "style_id": 126924,
+      "name": "Green",
+      "sale_price": "null",
+      "original_price": "462",
+      "default?": true,
+      "photos": [{
+          "url": "https://images.unsplash.com/photo-1517720359744-6d12f8a09b10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1567&q=80",
+          "thumbnail_url": "https://images.unsplash.com/photo-1544701758-5241eb611a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+      }, {
+          "url": "https://images.unsplash.com/photo-1454024183771-42d54053cd75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80",
+          "thumbnail_url": "https://images.unsplash.com/photo-1477420143023-6a0e0b04b69a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=300&q=80"
+      }],
+      "skus": {
+          "731094": {
+              "size": "One Size",
+              "quantity": 32
+          }
+      }
+  }],
+  "features": [{
+      "feature": "Sustainably Sourced",
+      "value": "null"
+  }, {
+      "feature": "Cut",
+      "value": "Skinny"
+  }, {
+      "feature": "Green Leaf Certified",
+      "value": "null"
+  }, {
+      "feature": "Fabric",
+      "value": "Canvas"
+  }],
+  "related": [45375, 36375, 43469, 22041, 10852, 53139, 45881]
+}
