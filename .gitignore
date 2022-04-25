@@ -1,6 +1,9 @@
 Dockerfile
 .dockerignore
 
+*.pem
+export_json/
+
 .DS_Store
 
 # Logs

@@ -1,7 +1,10 @@
 /* eslint-disable no-console */
 import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
-mongoose.connect('mongodb://127.0.0.1/products-api')
+dotenv.config();
+
+mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@54.235.2.186:27017/products-api?authSource=products-api`)
   .then(() => {
     console.log('Connected to products database');
   })
@@ -47,7 +50,7 @@ const productSchema = new mongoose.Schema({
   related: [Number],
 });
 
-productSchema.index({ 'styles.style_id': 1 });
+// productSchema.index({ 'styles.style_id': 1 });
 
 const Product = mongoose.model('Product', productSchema);
 
