@@ -20,9 +20,9 @@ app.use(cors());
 
 const welcomeMessage = `Welcome to the Products API for Atelier eCommerce!
   The available endpoints are:
-    (1) /products params: (count) and (page);
-    (2) /products/:product_id;
-    (3) /products/:product_id/styles; and
+    (1) /products params: (count) and (page)
+    (2) /products/:product_id
+    (3) /products/:product_id/styles
     (4) /products/:product_id/related`;
 
 // ROUTES
