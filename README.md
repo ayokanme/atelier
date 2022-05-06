@@ -15,4 +15,4 @@ API Service to provide product catalog data to the Atelier eCommerce client at p
 
 ## Summary
 
-Designed and sacaled multi-layer backend system improving performance of primary API endpoint from 640 rps to 4,900 rps (secondary endpoints: ~1000 rps to >7500 rps) for 1min using caching and load balancing (across 3 servers) through NGINX. Optimized queries to < 2ms in MongoDB.
+Designed and scaled multi-layer backend system improving performance of primary API endpoint from 640 rps to 4,900 rps (secondary endpoints: ~1000 rps to >7500 rps) for 1min using caching and load balancing (across 3 servers) through NGINX. Optimized queries to < 2ms in MongoDB.
