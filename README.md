@@ -18,8 +18,8 @@ Designed and scaled multi-layer backend system improving performance of primary 
 
 ## Performance Results
 
-|                              | Performance (RPS / Latency (ms) / Error Rate (%))  |
-|           Endpoint           |----------------------------------------------------|
+|           Endpoint           | Performance (RPS / Latency (ms) / Error Rate (%))  |
+|                              |----------------------------------------------------|
 |                              | Single-server Deployment | Multi-server Deployment |
 |-----------------------------------------------------------------------------------|
 |/products                     |      640 / 840 / 0       |    4,880 / 202 / 0.1    |
@@ -38,10 +38,10 @@ Designed and scaled multi-layer backend system improving performance of primary 
 - run `npm install`
 - create a `.env` file and add the following properties:
 	```
-		MONGO_USERNAME="DB_USERNAME"
-		MONGO_PASSWORD="DB_PASSWORD"
-		MONGO_IP="LOCALHOST_OR_IP_OF_DB"
-		MONGO_AUTH_DB="DB_FOR_AUTHENTICATION"
+	MONGO_USERNAME="DB_USERNAME"
+	MONGO_PASSWORD="DB_PASSWORD"
+	MONGO_IP="LOCALHOST_OR_IP_OF_DB"
+	MONGO_AUTH_DB="DB_FOR_AUTHENTICATION"
 	```
 - run `npm start`
 - navigate to `localhost:3500` and follow the instructions
