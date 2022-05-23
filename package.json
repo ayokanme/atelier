@@ -32,6 +32,7 @@
     "express": "4.17",
     "jest": "^27.5.1",
     "k6": "^0.0.0",
+    "mongodb": "^4.5.0",
     "mongoose": "6.2",
     "nodemon": "^2.0.15",
     "supertest": "^6.2.2"

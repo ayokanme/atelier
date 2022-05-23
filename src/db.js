@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@54.235.2.186:27017/products-api?authSource=products-api`)
+mongoose.connect(`mongodb://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@${process.env.MONGO_IP}:27017/products-api?authSource=${process.env.MONGO_AUTH_DB}`)
   .then(() => {
     console.log('Connected to products database');
   })
