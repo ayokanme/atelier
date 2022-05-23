@@ -18,14 +18,14 @@ Designed and scaled multi-layer backend system improving performance of primary 
 
 ## Performance Results
 
-|           Endpoint           | Performance (RPS / Latency (ms) / Error Rate (%))  |
-|                              |----------------------------------------------------|
-|                              | Single-server Deployment | Multi-server Deployment |
-|-----------------------------------------------------------------------------------|
-|/products                     |      640 / 840 / 0       |    4,880 / 202 / 0.1    |
-|/products/:product_id         |     1,033 / 512 / 0      |     6,967 / 90 / 0      |
-|/products/:product_id/styles  |      884 / 603 / 0       |     5,414 / 115 / 0     |
-|/products/:product_id/related |     1,050 / 504 / 0      |    7,540 / 122 / 0.2    |
+| Endpoint                        | Performance (RPS / Latency (ms) / Error Rate (%))  |
+|                                 |----------------------------------------------------|
+|                                 | Single-server Deployment | Multi-server Deployment |
+|--------------------------------------------------------------------------------------|
+| `/products`                     |      640 / 840 / 0       |    4,880 / 202 / 0.1    |
+| `/products/:product_id`         |     1,033 / 512 / 0      |     6,967 / 90 / 0      |
+| `/products/:product_id/styles`  |      884 / 603 / 0       |     5,414 / 115 / 0     |
+| `/products/:product_id/related` |     1,050 / 504 / 0      |    7,540 / 122 / 0.2    |
 
 
 ## Application Architecture
