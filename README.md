@@ -20,21 +20,21 @@ Designed and scaled multi-layer backend system improving performance of primary 
 
 - Single-server Deployment
 
-| Endpoint                        | Performance (RPS / Latency (ms) / Error Rate (%)) |
-|---------------------------------|---------------------------------------------------|
-| `/products`                     | 640 / 840 / 0                                     |
-| `/products/:product_id`         | 1,033 / 512 / 0                                   |
-| `/products/:product_id/styles`  | 884 / 603 / 0                                     |
-| `/products/:product_id/related` | 1,050 / 504 / 0                                   |
+  | Endpoint                        | Performance (RPS / Latency (ms) / Error Rate (%)) |
+  |---------------------------------|---------------------------------------------------|
+  | `/products`                     |                    640 / 840 / 0                  |
+  | `/products/:product_id`         |                   1,033 / 512 / 0                 |
+  | `/products/:product_id/styles`  |                    884 / 603 / 0                  |
+  | `/products/:product_id/related` |                   1,050 / 504 / 0                 |
 
 - Multi-server Deployment
 
-| Endpoint                        | Performance (RPS / Latency (ms) / Error Rate (%)) |
-|---------------------------------|---------------------------------------------------|
-| `/products`                     | 4,880 / 202 / 0.1                                 |
-| `/products/:product_id`         | 6,967 / 90 / 0                                    |
-| `/products/:product_id/styles`  | 5,414 / 115 / 0                                   |
-| `/products/:product_id/related` | 7,540 / 122 / 0.2                                 |
+  | Endpoint                        | Performance (RPS / Latency (ms) / Error Rate (%)) |
+  |---------------------------------|---------------------------------------------------|
+  | `/products`                     |                   4,880 / 202 / 0.1               |
+  | `/products/:product_id`         |                     6,967 / 90 / 0                |
+  | `/products/:product_id/styles`  |                    5,414 / 115 / 0                |
+  | `/products/:product_id/related` |                   7,540 / 122 / 0.2               |
 
 ## Application Architecture
 
