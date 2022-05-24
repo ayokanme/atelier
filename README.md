@@ -19,7 +19,7 @@ Designed and scaled multi-layer backend system improving performance of primary 
 ## Performance Results
 
 |           Endpoint           | Performance (RPS / Latency (ms) / Error Rate (%))  |
-|                              |----------------------------------------------------|
+|------------------------------|----------------------------------------------------|
 |                              | Single-server Deployment | Multi-server Deployment |
 |------------------------------|----------------------------------------------------|
 |/products                     |      640 / 840 / 0       |    4,880 / 202 / 0.1    |
